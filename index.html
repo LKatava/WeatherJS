@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <title>Weather cast</title>
+        <meta charset="UTF-8">
+        <link href="main.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Weather Dashboard</h1>
+
+        <div class="weather-container">
+            <!-- Current Weather -->
+            <div class="weather-box" id="current-weather">
+                <img src="#" alt="Weather Icon" id="current-icon" class="icon">
+                <div class="temperature" id="current-temp"></div>
+                <div class="humidity" id="current-humidity"></div>
+                <div class="day-night" id="day-night-status"></div>
+                <div class="rain" id="rain-status"></div>
+            </div>
+
+            <!-- Daily Weather -->
+            <div class="weather-box" id="daily-weather">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Temperature Min (°C)</th>
+                            <th scope="col">Temperature Max (°C)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="daily-weather-table">
+                        <!-- Daily weather data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Hourly Weather -->
+            <div class="weather-box" id="hourly-weather">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Temperature (°C)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="hourly-weather-table">
+                        <!-- Hourly weather data will be inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script type="module" src="data.js"></script>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

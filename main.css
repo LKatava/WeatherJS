@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+.weather-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.weather-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.temperature {
+    font-size: 2em;
+    margin: 10px 0;
+}
+.humidity, .day-night, .rain, .max-min-temp {
+    font-size: 1.2em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
